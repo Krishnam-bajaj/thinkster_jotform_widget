@@ -27,13 +27,13 @@
                 .then(data => {
                 // console.log(data);
                 // result = data.message;
-                if(data.message=="User Already Exist"){
+                if(data.message=="User Already Exist" || data.message=="Email address not valid."){
                 document.getElementById("sublabel_input_6").style.color = "red";
                 document.getElementById("sublabel_input_6").innerText = data.message;
                 }
                 else {
                     document.getElementById("sublabel_input_6").style.color = "black";
-                    document.getElementById("sublabel_input_6").innerText = data.message;
+                    document.getElementById("sublabel_input_6").innerText = "example@example.com";
                 }
                 });
                 };
