@@ -49,11 +49,12 @@
                     var data = {}
                     var result = document.getElementById("sublabel_input_6").innerText;
                     if(result != "User Already Exist"){// || result == "Email address not valid."){
-                        data.valid = false;
+                        data.valid = true;
                     }
                     else{
                         data.valid = false;
                     }
+
                     data.value = document.getElementById('userInput').value
                         //you should valid attribute to data for JotForm
                         //to be able to use youw widget as required
