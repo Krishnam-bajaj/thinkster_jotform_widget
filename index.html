@@ -42,7 +42,7 @@
 
 
         <div id="main">
-            <h3>Thinkster Widget</h3>
+            <!-- <h3>Thinkster Widget</h3> -->
             <span id="labelText"></span>
             <div>
                 <input type="text" id="userInput" onchange="email()">
@@ -94,7 +94,7 @@
 
                 //subscribe to form submit event
                 JFCustomWidget.subscribe("submit", function(){
-                    var data = {};
+                    var data = {}
                     var result = document.getElementById("sublabel_input_6").innerText;
                     if(result != "User Already Exist" && result != "Email address not valid." ){
                         data.valid = true;
