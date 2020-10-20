@@ -64,7 +64,7 @@
 
             email = () => {
                 final = document.getElementById('userInput').value;
-                const url = "https://data-sandbox.tabtor.com/v1/users/validate?login=" + final;
+                const url = "api url" + final;
                 showSpinner()
 
                 fetch(url)
@@ -73,8 +73,7 @@
                 // );
                 // .then(data => console.log(data));
                 .then(data => {
-                // console.log(data);
-                // result = data.message;
+                
                 if(data.message=="User Already Exist" || data.message=="Email address not valid."){
                 document.getElementById("sublabel_input_6").style.color = "red";
                 document.getElementById("sublabel_input_6").innerText = data.message;
